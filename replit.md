@@ -112,7 +112,9 @@ This is a Flask-based portfolio website for Seema Devi, an AI & Automation Engin
 
 ```
 Changelog:
-- June 24, 2025. Initial setup
+- June 24, 2025. Initial setup and portfolio creation
+- June 24, 2025. Created professional PDF resume from provided Word document using ReportLab
+- June 24, 2025. Fixed template form error and enabled resume download functionality
 ```
 
 ## User Preferences
