@@ -1,0 +1,471 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="row align-items-center min-vh-100">
+            <div class="col-lg-6">
+                <div class="hero-content">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Hi, I'm <span class="text-primary">Seema Devi</span>
+                    </h1>
+                    <h2 class="h3 text-white-50 mb-4">AI & Automation Engineer</h2>
+                    <p class="lead text-white-75 mb-4">
+                        Innovative professional specializing in Python development, machine learning, and automation workflows. 
+                        Passionate about leveraging cutting-edge technologies to develop scalable and efficient solutions.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary btn-lg me-3">Learn More</a>
+                        <a href="{{ url_for('download_resume') }}" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-download me-2"></i>Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image">
+                    <img src="https://pixabay.com/get/gf46c907c5dc61d0333c9a4ad1a3a10689716d44857922d13ece0fcfa0b0fabc6e43cb66c27ec4a6b31a01fe5812df6c5671c51a231654f4e0a058adccff36029_1280.jpg" 
+                         alt="Professional Developer Workspace" class="img-fluid rounded-3 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about AI & Automation</p>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+                <img src="https://pixabay.com/get/g8d9ca3f2b56b0d4d91a518718c83ff768bfeccd10026c0ede8594a5f69219d0a19afdff873de591fdc3d7078204679d8c82358f2ac044fc0567e1560195466ff_1280.jpg" 
+                     alt="AI Technology Abstract" class="img-fluid rounded-3 shadow">
+            </div>
+            <div class="col-lg-6">
+                <h3 class="mb-4">Professional Profile</h3>
+                <p class="text-muted mb-4">
+                    Innovative and detail-oriented AI & Automation Engineer with a strong background in Python development, 
+                    machine learning, and automation workflows. Proficient in building and integrating AI-driven solutions 
+                    to streamline business processes and enhance decision-making.
+                </p>
+                <p class="text-muted mb-4">
+                    Passionate about leveraging cutting-edge technologies such as OpenAI APIs, Make.com, and n8n to develop 
+                    scalable and efficient automation tools. Experienced in full-stack development with modern frameworks 
+                    and cloud technologies.
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i>Auckland, New Zealand</li>
+                            <li class="mb-2"><i class="fas fa-phone text-primary me-2"></i>+64 (022) 1090581</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-envelope text-primary me-2"></i>seema.panwar09@gmail.com</li>
+                            <li class="mb-2"><i class="fas fa-id-card text-primary me-2"></i>NZ Resident</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Expertise in Modern Technologies</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="skill-category">
+                    <h4 class="mb-3"><i class="fas fa-code text-primary me-2"></i>Programming & Development</h4>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Python Development</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Flask & API Integration</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>React & Next.js</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="skill-category">
+                    <h4 class="mb-3"><i class="fas fa-robot text-primary me-2"></i>AI & Machine Learning</h4>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>OpenAI APIs</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Prompt Engineering</span>
+                            <span>92%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Machine Learning</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="skill-category">
+                    <h4 class="mb-3"><i class="fas fa-cogs text-primary me-2"></i>Automation & Cloud</h4>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Make.com & n8n</span>
+                            <span>93%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width: 93%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>AWS Lambda & Cloud</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>PostgreSQL & Databases</span>
+                            <span>88%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">Professional Journey</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Software Developer Intern</h4>
+                            <p class="timeline-company">NIHI, UniServices | Auckland</p>
+                            <p class="timeline-date">Apr 2024 – Jul 2024</p>
+                            <ul class="timeline-description">
+                                <li>Contributed to developing dynamic web applications using JavaScript, ReactJS, NodeJS, HTML, and CSS</li>
+                                <li>Implemented user authentication, created various APIs, and performed CRUD operations</li>
+                                <li>Collaborated with UX designer to implement features, ensuring a seamless user experience</li>
+                                <li>Gained hands-on experience with cloud server side deployment using Netlify</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Statistical Data Analyst</h4>
+                            <p class="timeline-company">Statistics NZ | Auckland</p>
+                            <p class="timeline-date">Feb 2023 - Dec 2023</p>
+                            <ul class="timeline-description">
+                                <li>Verified the accuracy of Census data for 2023, including address validation and record updates</li>
+                                <li>Updated address records to ensure data accuracy and completeness</li>
+                                <li>Collaborated with teams to ensure the completeness and correctness of address data</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Computer Science Trainer</h4>
+                            <p class="timeline-company">Central Board of Secondary Education | New Delhi, India</p>
+                            <p class="timeline-date">Jan 2017 - Jul 2021</p>
+                            <ul class="timeline-description">
+                                <li>Educated students in HTML, Artificial Intelligence, Database Management, MySQL Python, and various computer applications</li>
+                                <li>Conducted interactive lab sessions to provide students with hands-on practical experience</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4 class="timeline-title">Software Developer</h4>
+                            <p class="timeline-company">Binary Softzone Pvt. Ltd. | Noida, India</p>
+                            <p class="timeline-date">Sep 2009 – Feb 2011</p>
+                            <ul class="timeline-description">
+                                <li>Developed and deployed dynamic websites for property management and e-commerce businesses</li>
+                                <li>Used HTML, CSS, PHP, JavaScript, AJAX, jQuery, MySQL, SQL, WordPress, and Joomla</li>
+                                <li>Implemented client side validation to ensure data integrity and improve user interactions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic Background</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>Advanced Software Developer (Cloud & AI)</h4>
+                    <p class="education-level">Level 6</p>
+                    <p class="education-institution">Mission Ready</p>
+                    <p class="education-date">Feb 2024 – Jul 2024</p>
+                    <p class="education-skills">
+                        <strong>Skills:</strong> MERN Stack, DevOps, Cloud, Agile, Microsoft Azure, CI/CD, SQL, Python, AWS
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>Master of Technology</h4>
+                    <p class="education-level">Computer Science and Engineering</p>
+                    <p class="education-institution">Maharishi Dayanand University, India</p>
+                    <p class="education-date">Completed</p>
+                    <p class="education-skills">
+                        <strong>Skills:</strong> Advanced Data Structure, Software Development, OOPs, JAVA, Project Management, Python, SQL
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4>Bachelor of Technology</h4>
+                    <p class="education-level">Computer Science and Engineering</p>
+                    <p class="education-institution">Dr. A. K. Technical University, India</p>
+                    <p class="education-date">Completed</p>
+                    <p class="education-skills">
+                        <strong>Skills:</strong> Data Structure, DBMS, SQL, C, C++, Software Engineering, Algorithm Development
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h2 class="section-title">Portfolio</h2>
+                <p class="section-subtitle">Featured Projects & Expertise</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g8d9ca3f2b56b0d4d91a518718c83ff768bfeccd10026c0ede8594a5f69219d0a19afdff873de591fdc3d7078204679d8c82358f2ac044fc0567e1560195466ff_1280.jpg" 
+                             alt="AI Automation Project" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>AI Automation Solutions</h4>
+                                <p>Intelligent automation workflows using OpenAI APIs and Make.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>AI Automation Solutions</h4>
+                        <p>Developed sophisticated automation workflows leveraging OpenAI APIs, Make.com, and n8n for business process optimization.</p>
+                        <div class="portfolio-tags">
+                            <span class="badge bg-primary">Python</span>
+                            <span class="badge bg-success">OpenAI</span>
+                            <span class="badge bg-warning">Make.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/g28ce69d858314cf1cb9e33f9d91cf1f2a14d0837642bfe98c15ebb12113cf98e3d77ac6d58b50027913b7e205c090497736e1788113bab91819721e55f8b6224_1280.png" 
+                             alt="Web Development Project" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Full-Stack Web Applications</h4>
+                                <p>Dynamic web applications with React, Node.js, and modern frameworks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Full-Stack Web Applications</h4>
+                        <p>Built comprehensive web applications using React, Next.js, Flask, and modern development practices with cloud deployment.</p>
+                        <div class="portfolio-tags">
+                            <span class="badge bg-primary">React</span>
+                            <span class="badge bg-success">Flask</span>
+                            <span class="badge bg-warning">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://pixabay.com/get/ge67e8e4b2c36a12f8669f872714defcea02f3289a28ba9213edb2f55c502dda0e2f5c925be38560f44143a15fef852042e006256972886eb2576e4997e658de4_1280.jpg" 
+                             alt="Machine Learning Project" class="img-fluid">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Machine Learning Solutions</h4>
+                                <p>AI-powered applications for data analysis and business intelligence</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h4>Machine Learning Solutions</h4>
+                        <p>Developed machine learning models and AI-driven solutions for data analysis, pattern recognition, and business intelligence.</p>
+                        <div class="portfolio-tags">
+                            <span class="badge bg-primary">Python</span>
+                            <span class="badge bg-success">ML</span>
+                            <span class="badge bg-warning">Data Science</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5">
+                <h2 class="section-title text-white">Get In Touch</h2>
+                <p class="section-subtitle text-white-50">Let's discuss your next project</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <h4 class="mb-4">Contact Information</h4>
+                <div class="contact-info">
+                    <div class="contact-item mb-3">
+                        <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                        <span>Forrest Hill, Auckland, New Zealand</span>
+                    </div>
+                    <div class="contact-item mb-3">
+                        <i class="fas fa-phone text-primary me-3"></i>
+                        <span>+64 (022) 1090581</span>
+                    </div>
+                    <div class="contact-item mb-3">
+                        <i class="fas fa-envelope text-primary me-3"></i>
+                        <span>seema.panwar09@gmail.com</span>
+                    </div>
+                    <div class="contact-item mb-4">
+                        <i class="fas fa-id-card text-primary me-3"></i>
+                        <span>New Zealand Resident (Full Work Rights)</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/seema-devi-bb565522b" target="_blank" class="btn btn-outline-primary me-3">
+                        <i class="fab fa-linkedin me-2"></i>LinkedIn
+                    </a>
+                    <a href="https://github.com/Seema-Devi" target="_blank" class="btn btn-outline-primary">
+                        <i class="fab fa-github me-2"></i>GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h4 class="mb-4">Send Message</h4>
+                <form method="POST" action="{{ url_for('contact') }}" class="contact-form">
+                    {{ form.hidden_tag() }}
+                    <div class="mb-3">
+                        {{ form.name.label(class="form-label") }}
+                        {{ form.name(class="form-control") }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form.email.label(class="form-label") }}
+                        {{ form.email(class="form-control") }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form.subject.label(class="form-label") }}
+                        {{ form.subject(class="form-control") }}
+                    </div>
+                    <div class="mb-3">
+                        {{ form.message.label(class="form-label") }}
+                        {{ form.message(class="form-control", rows="5") }}
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
